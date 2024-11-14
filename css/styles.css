@@ -44,8 +44,6 @@ a {
     align-items: center;
 }
 
-
-
 .logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -65,7 +63,7 @@ a {
     color: #2e2f42;
 } 
 
-.footer-logo {
+.footer-log {
     margin-bottom: 16px;
 }
 
@@ -119,9 +117,13 @@ a {
 
 .main-sct-one {
     background-color: #2e2f42; 
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 .sct-one-text {
+    margin: 0 auto 48px;
+    width: 496px;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
@@ -130,6 +132,13 @@ a {
 }
 
 .sct-one-btn {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 10px;
+    border-radius: 4px;
+    padding: 16px 32px;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -139,13 +148,41 @@ a {
     background-color: #4d5ae5;
 }
 
+.btn {
+    margin: auto;
+}
+
 .sct-one-btn:hover,
 .sct-one-btn:focus {
     background-color: #404BBF;
     cursor: pointer;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  .sct-two-list {
+    display: flex;
+    gap: 24px;
+  }
+
+  .sct-two-item {
+    width: calc((100% - 72px) / 4);
+  }
+
 .sct-two-text {
+    padding-top: 120px;
+    padding-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -154,6 +191,7 @@ a {
 }
 
 .sct-two-p {
+    padding-bottom: 120px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -164,12 +202,20 @@ a {
 }
 
 .sct-three-headline {
-    text-transform: capitalize;
+    padding-top: 120px;
+    padding-bottom: 72px;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
+    text-transform: capitalize;
     text-align: center;
     color: #2e2f42;
+}
+
+.sct-three-list {
+    display: flex;
+    align-items: center;
+    gap: 24px;
 }
 
 .sct-three-item {
@@ -177,6 +223,8 @@ a {
 }
 
 .sct-three-text {
+    padding-top: 32px;
+    padding-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -186,14 +234,22 @@ a {
 }
 
 .sct-three-p {
+    padding-bottom: 32px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
 }
 
+.sct-four-container {
+    width: 1128px;
+    padding: 120px;
+    background-color: #fff;
+}
 
 .sct-four-headline {
+    padding-top: 120px;
+    padding-bottom: 72px;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
@@ -202,7 +258,26 @@ a {
     color: #2e2f42;
 }
 
+.sct-four-list {
+    margin-top: 72px;
+    gap: 24px;
+    border-radius: 1px solid #e7e9fc;
+    text-align: center;
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.sct-four-item {
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    width: calc((100% - 48px) / 3);
+}
+
 .sct-four-text {
+    padding-top: 32px;
+    padding-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -211,6 +286,7 @@ a {
 }
 
 .sct-four-p {
+    padding-bottom: 8px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
