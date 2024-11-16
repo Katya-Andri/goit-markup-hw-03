@@ -20,6 +20,11 @@ a {
     text-decoration: none;
 }
 
+img {
+    display: block;
+    width: 100%;
+}
+
 /* common */
 
 .container {
@@ -63,7 +68,8 @@ a {
     color: #2e2f42;
 } 
 
-.footer-log {
+.footer-logo {
+    display: inline-block;
     margin-bottom: 16px;
 }
 
@@ -123,7 +129,7 @@ a {
 
 .sct-one-text {
     margin: 0 auto 48px;
-    width: 496px;
+    max-width: 496px;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
@@ -132,10 +138,13 @@ a {
 }
 
 .sct-one-btn {
-    display: flex;
+    display: block;
+    border: none;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: row;
+    min-width: 169px;
+    height: 56px;
     gap: 10px;
     border-radius: 4px;
     padding: 16px 32px;
@@ -146,6 +155,7 @@ a {
     letter-spacing: 0.04em;
     color: #fff;
     background-color: #4d5ae5;
+    cursor: pointer;
 }
 
 .btn {
@@ -155,7 +165,10 @@ a {
 .sct-one-btn:hover,
 .sct-one-btn:focus {
     background-color: #404BBF;
-    cursor: pointer;
+}
+
+.main-sct-two {
+    padding: 120px 0;
 }
 
 .visually-hidden {
@@ -181,8 +194,7 @@ a {
   }
 
 .sct-two-text {
-    padding-top: 120px;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -191,19 +203,18 @@ a {
 }
 
 .sct-two-p {
-    padding-bottom: 120px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
 
 .main-sct-three {
+    padding: 120px 0;
     background-color: #F4F4FD;
 }
 
 .sct-three-headline {
-    padding-top: 120px;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
@@ -219,12 +230,17 @@ a {
 }
 
 .sct-three-item {
-    background-color: #FFFFFF;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    background-color: #fff;
+}
+
+.sct-three-container {
+    padding: 32px 0;
 }
 
 .sct-three-text {
-    padding-top: 32px;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -234,22 +250,25 @@ a {
 }
 
 .sct-three-p {
-    padding-bottom: 32px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
 }
 
+.main-sct-four {
+    padding: 120px 0 120px 0;
+}
+
 .sct-four-container {
     width: 1128px;
-    padding: 120px;
+    padding: 32px 16px;
+    border-radius: 1px solid #e7e9fc;
     background-color: #fff;
 }
 
 .sct-four-headline {
-    padding-top: 120px;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
@@ -261,7 +280,7 @@ a {
 .sct-four-list {
     margin-top: 72px;
     gap: 24px;
-    border-radius: 1px solid #e7e9fc;
+    row-gap: 48px; 
     text-align: center;
     display: flex; 
     flex-direction: row;
@@ -269,6 +288,7 @@ a {
 }
 
 .sct-four-item {
+    border: 1px solid #e9eaea;
     gap: 8px;
     align-items: center;
     justify-content: center;
@@ -293,12 +313,14 @@ a {
 }
 
 .page-footer {
+    padding: 100px 0;
     background-color: #2e2f42;
 }  
 
 .footer-p {
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-color: #f4f4fd;
+    max-width: 264px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
 }
