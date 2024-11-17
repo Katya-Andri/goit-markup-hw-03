@@ -274,7 +274,7 @@ img {
     margin-top: 72px;
     gap: 24px;
     row-gap: 48px; 
-    text-align: center;
+    text-align: left;
     display: flex; 
     flex-direction: row;
     flex-wrap: wrap;
@@ -289,7 +289,7 @@ img {
 
 .sct-four-text-container {
     padding: 32px 16px;
-    
+    border: 1px solid #e7e9fc;
 }
 
 .sct-four-text {
